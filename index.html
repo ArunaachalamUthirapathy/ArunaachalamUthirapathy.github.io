@@ -1,4 +1,3 @@
-@ -1,600 +0,0 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -56,21 +55,6 @@
   height: .7rem;
   background-color: #ffbd39;
 }
-
- /* Style for the visitor counter */
-        .visitor-counter {
-            position: fixed;
-            bottom: 10px;
-            right: 10px;
-            background: rgba(0, 0, 0, 0.7);
-            color: white;
-            padding: 3px 8px;
-            border-radius: 5px;
-            font-size: 10px;
-            font-weight: bold;
-            z-index: 1000;
-        }
-
 /* Animation styles */
 #typing-animation {
   position: relative;
@@ -578,24 +562,6 @@
  
 	
     <footer class="ftco-footer ftco-section">
-
-        <!-- Visitor Counter -->
-<div class="visitor-counter">
-    Visitors: <span id="visitorCount">0</span>
-</div>
-
-<script>
-    // Check if localStorage has a counter
-    if (localStorage.getItem("pageVisits")) {
-        let count = parseInt(localStorage.getItem("pageVisits")) + 1;
-        localStorage.setItem("pageVisits", count);
-        document.getElementById("visitorCount").innerText = count;
-    } else {
-        localStorage.setItem("pageVisits", 1);
-        document.getElementById("visitorCount").innerText = 1;
-    }
-</script>
-
 		<div class="container">
 		  <div class="row">
 			<div class="col-md-12 text-center">
